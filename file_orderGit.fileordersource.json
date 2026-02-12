@@ -1,0 +1,10 @@
+{
+  "TYPE" : "FileWatch",
+  "version" : "1.9.0",
+  "workflowName" : "gitTest",
+  "agentName" : "standAlone",
+  "directoryExpr" : "\"C:\\\\Users\\\\Narottam Nayak\\\\Desktop\\\\zehntech\\\\hello\"",
+  "timeZone" : "UTC",
+  "delay" : 2,
+  "priority" : 0
+}

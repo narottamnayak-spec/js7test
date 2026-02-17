@@ -1,0 +1,28 @@
+{
+  "TYPE" : "Workflow",
+  "version" : "1.9.0",
+  "timeZone" : "Asia/Kolkata",
+  "instructions" : [ {
+    "TYPE" : "Execute.Named",
+    "jobName" : "job1",
+    "label" : "job1"
+  } ],
+  "jobs" : {
+    "job1" : {
+      "agentName" : "standAlone",
+      "withSubagentClusterIdExpr" : false,
+      "executable" : {
+        "TYPE" : "ShellScriptExecutable",
+        "script" : "ping -n 5 localhost",
+        "v1Compatible" : false
+      },
+      "skipIfNoAdmissionForOrderDay" : false,
+      "killAtEndOfAdmissionPeriod" : false,
+      "parallelism" : 1,
+      "graceTimeout" : 1,
+      "failOnErrWritten" : false,
+      "warnOnErrWritten" : false,
+      "isNotRestartable" : false
+    }
+  }
+}
